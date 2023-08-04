@@ -76,7 +76,7 @@ let busqueda = bienvenida()
 console.log(busqueda);
 
 
-let compra = 
+let compra;
 
 // let productoBuscado = bienvenida();
 // console.log(productoBuscado);
