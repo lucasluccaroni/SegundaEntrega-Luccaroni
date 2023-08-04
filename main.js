@@ -10,10 +10,10 @@ class Producto {
 
 let producto = [];
 let mouseLogitech = new Producto ("Mouse Logitech Signature M650 ", 26000, 8, "mouse", 1);
-let tecladoRazer = new Producto ("Teclado Razer Huntsman Mini", 80000, 5, "teclados", 2);
-let monitorSamsung = new Producto ("Monitor Samsung Odyssey CRG5", 155000, 6, "monitores", 3);
-let tecladoLogitech = new Producto ("Teclado Logitech K380", 27000, 4, "teclados", 4);
-let monitorAsus = new Producto ("Monitor Asus VG24VQ", 176000, 3, "monitores", 5)
+let tecladoRazer = new Producto ("Teclado Razer Huntsman Mini", 80000, 5, "teclado", 2);
+let monitorSamsung = new Producto ("Monitor Samsung Odyssey CRG5", 155000, 6, "monitor", 3);
+let tecladoLogitech = new Producto ("Teclado Logitech K380", 27000, 4, "teclado", 4);
+let monitorAsus = new Producto ("Monitor Asus VG24VQ", 176000, 3, "monitor", 5)
 
 
 
@@ -56,15 +56,15 @@ const bienvenida = () => {
     
         if (eleccion === "1"){
             alert("ELIJIO MOUSE");
-            return "mouses";
+            return "mouse";
     
         } else if (eleccion === "2"){
             alert("ELIJIO TECLADOS");
-            return "teclados";
+            return "teclado";
     
         } else if (eleccion === "3"){
             alert("ELIJIO MONITORES");
-            return "monitores";
+            return "monitor";
         } else{
             alert("ERROR. Número inválido")
         }
@@ -73,10 +73,20 @@ const bienvenida = () => {
 }
 
 let busqueda = bienvenida()
-console.log(busqueda);
 
+// const compra = (producto) =>{
+//     productosOrdenados.find((elemento) => {
+//         console.log(elemento === producto);
+//     })
+// }
+// compra(busqueda);
 
-let compra;
+const prueba = productosOrdenados.forEach((producto, indice) => {
+    //console.log(producto.categoria);
+    return producto.categoria === "teclado";
+})
+console.log(prueba);
+
 
 // let productoBuscado = bienvenida();
 // console.log(productoBuscado);
